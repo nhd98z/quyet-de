@@ -1,0 +1,38 @@
+#header {
+    background-color: #0000ff;
+    text-align: center;
+}
+
+#nav {
+    background-color: #800080;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        flex-direction: column; 
+    }    
+}
+
+#main {
+    background-color: #ffd700;
+    order: 1;
+    flex: auto;
+    text-align: center;
+}
+
+#aside {
+    background-color: #808080;
+    order: 2;
+    flex: auto;
+    text-align: center;
+}
+
+#footer {
+    background-color: #00ffff;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+<div>
+    {{#if question}}
+    <h1 id="question" class="text-center">{{question.question}}</h1>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <a class="yes btn btn-primary" href="/question/{{question.id}}/yes">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Đúng / Có / Phải
+            </a>
+        </div>
+        <div class="col-md-6 text-center">
+            <a class="no btn btn-danger" href="/question/{{question.id}}/no">
+                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> Sai / Không / Trái
+            </a>
+        </div>
+    </div>
+    <div class="text-center">
+        <a id="otherQuestion">
+            <button class="btn btn-default">
+                Câu hỏi khác
+            </button>
+        </a>
+        <a id="seeResult" href="/question/{{question.id}}">
+            <button class="btn btn-default">
+                Xem kết quả
+            </button>
+        </a>
+    </div>
+    {{else}}
+    <h1 class="text-center">Không có câu hỏi nào! Ấn vào
+        <a href="/ask">đây</a> để hỏi.</h1>
+    {{/if}}
+</div>

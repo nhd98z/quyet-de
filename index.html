@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="html">Button HTML</button>
+    <button id="jq">Button JQ</button>
+    <script>
+        var elm = document.getElementById('html');
+        elm.addEventListener('click', () => {
+            alert('Is click!');
+        });
+        $('#jq').click(() => {
+            alert('Is click!');
+        });
+    </script>
+</body>
+</html>
